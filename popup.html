@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <style>
+        button {
+          height: 30px;
+          width: 30px;
+          outline: none;
+        }
+
+        body {
+            background-color: #162447;
+            width: 380px;
+        }
+
+        ul {
+            display: initial;
+        }
+
+        li {
+            background-color: #1b1b2f;
+            color: #ff3153;
+            padding: 4%;
+            border-radius: 10px;
+            font-size: medium;
+            margin: 0.5%;
+        }
+
+        .values {
+            background-color: #0f0f0f;
+            border-radius: 10px;
+            padding: 2%;
+            border-style: none;
+            text-align: center;
+            width: 30%;
+            float: right;
+            color: white;
+        }
+      </style>
+    </head>
+    <body>
+        <ul>
+            <li>background color: <input type="text" placeholder="#000000" id="bckgnd" class="values color"></li>
+            <li>main color: <input type="text" placeholder="#000000" id="main" class="values color"> </li>
+            <li>(h1) color: <input type="text" placeholder="#000000" id="h1" class="values color"> </li>
+            <li>(h2-h5) color: <input type="text" placeholder="#000000" id="h2_h5" class="values color"> </li>
+            <li>links color: <input type="text" placeholder="#000000" id="links" class="values color"> </li>
+        </ul>
+      <button id="changeColor"></button>
+      <script src="scripts/load.js"></script>
+      <script src="scripts/popup.js"></script>
+      <script src="scripts/changeBackground.js"></script>
+      <script src="scripts/saveProps.js"></script>
+    </body>
+  </html>
