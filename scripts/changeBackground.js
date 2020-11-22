@@ -10,6 +10,7 @@ const changeBackground = (elem) => {
 
 arr.map((elem) => {
     elem.onkeyup = () => {
+        elem.style.backgroundColor = "#0f0f0f";
         if(elem.value.length == 7) changeBackground(elem);
     }
 });

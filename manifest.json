@@ -22,5 +22,13 @@
       "48": "images/get_started48.png",
       "128": "images/get_started128.png"
     },
+    "content_scripts": [
+      {
+        "matches": [
+          "https://www.google.com/", "<all_urls>"
+        ],
+        "js": ["scripts/apply.js"]
+      }
+    ],
     "manifest_version": 2
 }
