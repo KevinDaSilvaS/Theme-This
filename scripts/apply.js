@@ -43,6 +43,10 @@ const apply = (propName) => {
             headerText();
             break;
 
+        case "links":
+            links();
+            break;
+
         default:
             break;
     }
