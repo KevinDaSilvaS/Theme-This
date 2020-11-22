@@ -12,7 +12,6 @@ const searchForPropertieExtension = (propName) => {
             const elem = document.getElementById(propName);
             elem.value = data[propName];
             elem.style.backgroundColor = data[propName];
-            console.log("CHANGE BG")
         }
     });
 }

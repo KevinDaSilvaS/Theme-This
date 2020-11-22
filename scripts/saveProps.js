@@ -5,5 +5,4 @@ const saveProps = (elem) => {
 
     loadProps();
     loadPropsExtension();
-    console.log(props, "SAVED NEW ONE");
 }

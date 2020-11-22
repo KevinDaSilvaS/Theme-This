@@ -11,9 +11,6 @@ const loadProps = () => {
     searchForPropertie('h1');
     searchForPropertie('h2_h5');
     searchForPropertie('links');
-
-    console.log(props, "DATA")
-    
 }
 
 const searchForPropertie = (propName) => {
