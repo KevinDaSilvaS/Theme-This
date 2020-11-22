@@ -95,6 +95,18 @@ const mainText = () => {
     styleSheet.insertRule(`
     span { color: ${props.main} !important; }`
     , styleSheet.cssRules.length);
+
+    styleSheet.insertRule(`
+    nav { color: ${props.main} !important; }`
+    , styleSheet.cssRules.length);
+
+    styleSheet.insertRule(`
+    aside { color: ${props.main} !important; }`
+    , styleSheet.cssRules.length);
+
+    styleSheet.insertRule(`
+    details-menu  { color: ${props.main} !important; }`
+    , styleSheet.cssRules.length);
 }
 
 const mainTitleText = () => {
@@ -159,13 +171,23 @@ const links = () => {
     , styleSheet.cssRules.length);
 
     styleSheet.insertRule(`
-    yt-formatted-string.ytd-guide-signin-promo-renderer {
-        color: aqua;
-    }`
+    summary { color: ${props.links} !important; }`
+    , styleSheet.cssRules.length);
+
+    styleSheet.insertRule(`
+    yt-formatted-string { color: ${props.links} !important; }`
+    , styleSheet.cssRules.length);
+
+    styleSheet.insertRule(`
+    .Link--primary, .link-gray-dark { color: ${props.links} !important; }`
     , styleSheet.cssRules.length);
 
     styleSheet.insertRule(`
     code { background-color: #151515;}`
+    , styleSheet.cssRules.length);
+
+    styleSheet.insertRule(`
+    pre { background-color: #151515;}`
     , styleSheet.cssRules.length);
 
     styleSheet.insertRule(`
@@ -176,5 +198,3 @@ const links = () => {
 window.onload = function() {
     loadProps()
 };
-/* background-color: #151515;
-color: aliceblue; */

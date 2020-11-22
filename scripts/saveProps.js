@@ -4,5 +4,6 @@ const saveProps = (elem) => {
     chrome.storage.sync.set(prop);
 
     loadProps();
+    loadPropsExtension();
     console.log(props, "SAVED NEW ONE");
 }

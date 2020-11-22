@@ -18,6 +18,7 @@ chrome.tabs.onUpdated.addListener( function (tabId, changeInfo, tab) {
   if (changeInfo.status == 'complete') {
 
     loadProps();
+    loadPropsExtension();
     console.log("Finish");
     
   }

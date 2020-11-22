@@ -1,18 +1,18 @@
-const props = {};
-
-const loadProps = () => {
-    searchForPropertie('bckgnd');
-    searchForPropertie('main');
-    searchForPropertie('h1');
-    searchForPropertie('h2_h5');
-    searchForPropertie('links');
-
-    console.log(props, "PROPS")
-    return props;
+const loadPropsExtension = () => {
+    searchForPropertieExtension('bckgnd');
+    searchForPropertieExtension('main');
+    searchForPropertieExtension('h1');
+    searchForPropertieExtension('h2_h5');
+    searchForPropertieExtension('links');
 }
 
-const searchForPropertie = (propName) => {
+const searchForPropertieExtension = (propName) => {
     chrome.storage.sync.get(propName, function(data) {
-        if(data[propName]) props[propName] = data[propName];
+        if(data[propName]) {
+            const elem = document.getElementById(propName);
+            elem.value = data[propName];
+            elem.style.backgroundColor = data[propName];
+            console.log("CHANGE BG")
+        }
     });
 }
